@@ -21,7 +21,7 @@ export default function Nav() {
           <User />
         </NavButton>
       </div>
-      <a href="#" style={{ marginBottom: 20 }}>
+      <a href="#main" style={{ marginBottom: 20 }}>
         <Menu />
       </a>
     </nav>

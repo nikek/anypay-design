@@ -41,7 +41,7 @@ const chipStyle = css`
 export default function NavButton({ active, children, count }) {
   return (
     <div className={cx(buttonContainer, active && buttonContainerActive)}>
-      <a href="#" className={count && chipStyle} count={count}>
+      <a href="#main" className={count && chipStyle} count={count}>
         {children}
       </a>
     </div>
