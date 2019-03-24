@@ -6,17 +6,15 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-areas:
-    "nav main user"
-    "nav main detail";
+  grid-template-areas: "nav main panel";
   grid-template-columns: 80px 6fr 4fr;
-  grid-template-rows: 100px 1fr;
 
   color: #131313;
 }
 
 .nav {
   grid-area: nav;
+  position: relative;
   height: 100vh;
   width: 80px;
 
@@ -34,6 +32,11 @@
 
 .page-title {
   font-size: 38px;
+}
+
+.panel {
+  grid-area: panel;
+  position: relative;
 }
 
 .user {
@@ -85,4 +88,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card-shadow,
+.card {
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: white;
 }
