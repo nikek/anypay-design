@@ -1,15 +1,12 @@
 import React, { Component } from "react";
-
-import { ReactComponent as Logo } from "./logo.svg";
+import Nav from "./components/Nav.js";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <nav className="nav card-shadow">
-          <Logo className="app-logo" alt="logo" />
-        </nav>
+        <Nav />
         <main className="main">
           <h1 className="page-title">Dashboard</h1>
           <div className="card-shadowcard">Welcome</div>
