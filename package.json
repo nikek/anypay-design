@@ -2,6 +2,7 @@
   "name": "anypay-design",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nikek.github.com/anypay-design",
   "dependencies": {
     "emotion": "^10.0.9",
     "react": "^16.8.3",
