@@ -1,5 +1,7 @@
 :root {
   --primary-color: #ffca00;
+  --danger-color: #f00;
+  --success-color: #0f0;
 }
 
 .app {
@@ -37,7 +39,7 @@
   height: 100vh;
   background-color: #f7f7f7;
   overflow-y: scroll;
-  padding: 20px 30px 100px 60px;
+  padding: 20px 40px 100px;
 }
 
 .page-title {
@@ -107,5 +109,72 @@
 }
 
 .card {
+  display: grid;
+  padding: 20px;
+
   background-color: white;
+  border-radius: 6px;
+}
+.card svg {
+  margin-bottom: 8px;
+  fill: var(--primary-color);
+  width: 27px;
+  height: 27px;
+}
+.card label {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+.card output {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-row {
+  display: grid;
+  grid-auto-flow: column;
+  height: 120px;
+  grid-gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card--yellow {
+  background-color: var(--primary-color);
+}
+.card--yellow svg {
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+i.down-arrow {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+
+  border-top: 6px solid var(--danger-color);
+}
+
+i.up-arrow {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+
+  border-bottom: 6px solid var(--success-color);
+}
+
+.welcome-text {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 25px;
+  align-self: center;
+  margin-left: 15px;
 }
